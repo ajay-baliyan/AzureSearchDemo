@@ -3,18 +3,18 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "searchService_name": {
-      "defaultValue": "srch",
+      "defaultValue": "srchpoc",
       "type": "string"
     },
     "storageAccounts_searchblobs_name": {
-      "defaultValue": "blobs",
+      "defaultValue": "srchblobs",
       "type": "string"
     }
   },
   "variables": { },
   "resources": [
     {
-      "comments": "",
+      "comments": "for search poc",
       "type": "Microsoft.Search/searchServices",
       "sku": {
         "name": "basic"
@@ -31,7 +31,7 @@
       "dependsOn": [ ]
     },
     {
-      "comments": "",
+      "comments": "for search poc",
       "type": "Microsoft.Storage/storageAccounts",
       "sku": {
         "name": "Standard_RAGRS",
